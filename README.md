@@ -8,17 +8,13 @@ This repository contains a Python script to execute security-based use cases def
 - Prompts the user to select and execute a use case.
 - Calls tools associated with the use case, requiring user input for arguments.
 
-## Requirements
-
-- Python 3.x
-
 ## Usage
 
 1. Place your knowledge base JSON file (e.g., `kb.json`) in the same directory as the script.
 2. Run the script:
 
     ```bash
-    python use_case_executor.py
+    python POC.py
     ```
 
 3. When prompted, enter the name of the security-based use case you want to execute.
