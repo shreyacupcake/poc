@@ -45,8 +45,8 @@ Assuming the `kb.json` file contains the following data:
 ```
 
 
-
-# Vulnerability Database Plugin
+# Another Module #
+# Vulnerability Database Plugin (POC1.py)
 
 ## Overview
 
@@ -103,8 +103,8 @@ python plugin.py
 ```
 ## You will be prompted to:
 
-- Select a Database: Choose from the available databases defined in Configurationfile.json.
-- Enter Additional Information:
-  -- For NVD: Provide the year for which you want to fetch data.
--- For Vulners: Provide the vulnerability ID to fetch specific details.
--- For CVE: Fetch data from the provided CSV URL.
+1. Select a Database: Choose from the available databases defined in Configurationfile.json.
+2. Enter Additional Information:
+    a. For NVD: Provide the year for which you want to fetch data.
+    b. For Vulners: Provide the vulnerability ID to fetch specific details.
+    c. For CVE: Fetch data from the provided CSV URL.
