@@ -22,7 +22,7 @@ pip install requests
 ```
 
 ## Configuration
-Local Configuration File
+Local Configuration File: 
 Create a configuration file named Configurationfile.json in the root directory of the plugin with the following structure:
 
 ```json
