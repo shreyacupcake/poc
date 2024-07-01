@@ -1,0 +1,68 @@
+{
+    "databases": {
+        "NVD": {
+            "url": "https://nvd.nist.gov/vuln/data-feeds/MITRE_VCFE_FEED_{year}.json.gz",
+            "format": "json"
+        },
+        "CVE": {
+            "url": "https://cve.mitre.org/data/download_cve_list_csv.php",
+            "format": "csv"
+        },
+        "Vulners": {
+            "url": "https://vulners.com/api/v3/search/id/?id={vulnerability_id}",
+            "format": "json"
+        },
+        "ExploitDB": {
+            "url": "https://www.exploit-db.com/download/EXPLOITDB.csv",
+            "format": "csv"
+        },
+        "SecurityFocus": {
+            "url": "https://www.securityfocus.com/data/vuln.csv",
+            "format": "csv"
+        },
+        "OSVDB": {
+            "url": "https://osvdb.org/downloads/OSVDB-v2.4.csv",
+            "format": "csv"
+        },
+        "Snyk": {
+            "url": "https://snyk.io/vuln/api/v1/vulns/",
+            "format": "json"
+        },
+        "WhiteSource": {
+            "url": "https://api.whitesourcesoftware.com/v1/vulnerabilities",
+            "format": "json"
+        },
+        "CERT": {
+            "url": "https://www.cert.org/vulnerability/vulnerabilities.csv",
+            "format": "csv"
+        },
+        "Secunia": {
+            "url": "https://secunia.com/community/vuln-data.csv",
+            "format": "csv"
+        },
+        "NIST": {
+            "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.0219.pdf",
+            "format": "pdf"
+        },
+        "Mitre": {
+            "url": "https://cve.mitre.org/data/download_cve_list.csv",
+            "format": "csv"
+        },
+        "OpenVAS": {
+            "url": "https://www.openvas.org/download/openvas-vulnerabilities.csv",
+            "format": "csv"
+        },
+        "IBM X-Force": {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/csv",
+            "format": "csv"
+        },
+        "RBS": {
+            "url": "https://www.rbs.com/security/vuln-data.csv",
+            "format": "csv"
+        },
+        "US-CERT": {
+            "url": "https://www.us-cert.cisa.gov/sites/default/files/csv/US-CERT.csv",
+            "format": "csv"
+        }
+    }
+}
