@@ -48,9 +48,6 @@ Assuming the `kb.json` file contains the following data:
 
 
 # Vulnerability Database Management and Fetching Tool
-
-## Overview
-
 This tool helps manage and fetch data from different vulnerability databases. It supports adding new databases to a local configuration file and fetching vulnerability data from selected sources.
 
 ## Features
