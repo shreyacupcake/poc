@@ -1,14 +1,46 @@
 # Tool Execution Framework
 
-This project provides a framework for executing security-based use cases defined in a JSON knowledge base. The framework supports the dynamic invocation of tools with user-provided arguments.
+This repository contains a Python script to execute security-based use cases defined in a JSON knowledge base. The script reads the knowledge base, prompts the user to select a use case, and calls the relevant tools associated with the selected use case.
 
 ## Features
 
-- Load and Print Employee Details: Reads and prints employee details from a JSON file.
-- Tool Execution Framework:
-- call_tool Function: Simulates calling a tool with a given command and arguments.
-- execute_use_case Function:
-- Searches for a use case by name provided by the user.
-- Prints the use case's name and description if found.
-- Calls each tool specified in the use case, prompting the user for required arguments.
-- Prints an error message if the use case is not found.
+- Reads a JSON file containing use cases.
+- Prompts the user to select and execute a use case.
+- Calls tools associated with the use case, requiring user input for arguments.
+
+## Requirements
+
+- Python 3.x
+
+## Usage
+
+1. Place your knowledge base JSON file (e.g., `kb.json`) in the same directory as the script.
+2. Run the script:
+
+    ```bash
+    python use_case_executor.py
+    ```
+
+3. When prompted, enter the name of the security-based use case you want to execute.
+4. Provide values for the required arguments when prompted.
+
+## Example
+
+Assuming the `kb.json` file contains the following data:
+
+```json
+{
+    "use_cases": [
+        {
+            "name": "Example Use Case",
+            "description": "This is an example use case.",
+            "tools": [
+                {
+                    "toolname": "example_tool",
+                    "commands": "example_command",
+                    "arguments": ["arg1", "arg2"]
+                }
+            ]
+        }
+    ]
+}
