@@ -42,7 +42,7 @@ Assuming the `kb.json` file contains the following data:
         }
     ]
 }
-
+```
 
 
 
