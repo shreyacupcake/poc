@@ -46,27 +46,32 @@ Assuming the `kb.json` file contains the following data:
 
 
 
+# Vulnerability Database Plugin
 
-# Vulnerability Database Management and Fetching Tool (POC1.py)
-This tool helps manage and fetch data from different vulnerability databases. It supports adding new databases to a local configuration file and fetching vulnerability data from selected sources.
+## Overview
+
+The Vulnerability Database Plugin is designed for integration into a larger vulnerability management system. It provides functionalities for managing database configurations, fetching data from multiple vulnerability databases, and displaying detailed vulnerability information. This plugin is suitable for security professionals and developers who need to interact with various vulnerability data sources in their security tools.
 
 ## Features
 
-- Add new databases to a local configuration file.
-- Fetch NVD (National Vulnerability Database) data for a given year.
-- Fetch CVE data from a CSV source.
-- Fetch and display vulnerability details from the Vulners API.
+- **Database Management**: Add new vulnerability databases to a local configuration file.
+- **Data Fetching**: Fetch data from different vulnerability databases including NVD and CVE.
+- **Data Display**: Display detailed information about vulnerabilities, including CVE IDs and descriptions.
+- **Vulners Integration**: Fetch and display specific vulnerability details using the Vulners API.
 
-## Prerequisites
+## Installation
 
-- Python 3.x
-- `requests` library (install via `pip install requests`)
+To install the plugin, clone this repository and ensure you have Python 3.x installed. Install the required dependencies using pip:
 
-## Getting Started
+```bash
+git clone https://github.com/your_username/vulnerability-database-plugin.git
+cd vulnerability-database-plugin
+pip install requests
+```
 
-### 1. Configuration File
-
-Create a local configuration file with the following format:
+## Configuration
+Local Configuration File
+Create a configuration file named Configurationfile.json in the root directory of the plugin with the following structure:
 
 ```json
 {
@@ -75,9 +80,31 @@ Create a local configuration file with the following format:
             "url": "https://nvd.nist.gov/vuln/data-feeds",
             "format": "json"
         },
-        "SomeOtherDB": {
-            "url": "https://example.com/someotherdb.csv",
+        "CVE": {
+            "url": "https://example.com/cve-data.csv",
             "format": "csv"
+        },
+        "Vulners": {
+            "url": "https://vulners.com/api/v3/search/id/?id={vulnerability_id}",
+            "format": "json"
         }
     }
 }
+```
+## Adding New Databases
+To add new databases, manually update the Configurationfile.json file with new entries under the databases key.
+
+## Usage
+Running the Plugin
+To run the plugin, use the following command:
+```bash
+python plugin.py
+
+```
+## You will be prompted to:
+
+- Select a Database: Choose from the available databases defined in Configurationfile.json.
+- Enter Additional Information:
+  -- For NVD: Provide the year for which you want to fetch data.
+-- For Vulners: Provide the vulnerability ID to fetch specific details.
+-- For CVE: Fetch data from the provided CSV URL.
