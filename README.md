@@ -104,7 +104,4 @@ python plugin.py
 ## You will be prompted to:
 
 * Select a Database: Choose from the available databases defined in Configurationfile.json.
-* Enter Additional Information:
-              * For NVD: Provide the year for which you want to fetch data.
-              * For Vulners: Provide the vulnerability ID to fetch specific details.
-              * For CVE: Fetch data from the provided CSV URL.
+* Enter Additional Information: For NVD: Provide the year for which you want to fetch data; For Vulners: Provide the vulnerability ID to fetch specific details; For CVE: Fetch data from the provided CSV URL.
