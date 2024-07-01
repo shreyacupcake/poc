@@ -98,7 +98,7 @@ To add new databases, manually update the Configurationfile.json file with new e
 Running the Plugin
 To run the plugin, use the following command:
 ```bash
-python plugin.py
+python POC1.py
 
 ```
 ## You will be prompted to:
