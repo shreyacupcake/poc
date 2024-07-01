@@ -42,3 +42,45 @@ Assuming the `kb.json` file contains the following data:
         }
     ]
 }
+
+
+
+
+
+# Vulnerability Database Management and Fetching Tool
+
+## Overview
+
+This tool helps manage and fetch data from different vulnerability databases. It supports adding new databases to a local configuration file and fetching vulnerability data from selected sources.
+
+## Features
+
+- Add new databases to a local configuration file.
+- Fetch NVD (National Vulnerability Database) data for a given year.
+- Fetch CVE data from a CSV source.
+- Fetch and display vulnerability details from the Vulners API.
+
+## Prerequisites
+
+- Python 3.x
+- `requests` library (install via `pip install requests`)
+
+## Getting Started
+
+### 1. Configuration File
+
+Create a local configuration file with the following format:
+
+```json
+{
+    "databases": {
+        "NVD": {
+            "url": "https://nvd.nist.gov/vuln/data-feeds",
+            "format": "json"
+        },
+        "SomeOtherDB": {
+            "url": "https://example.com/someotherdb.csv",
+            "format": "csv"
+        }
+    }
+}
