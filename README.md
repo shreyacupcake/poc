@@ -19,7 +19,7 @@ This repository contains a Python script designed to execute AI-based security u
 2. Run the script:
 
     ```bash
-    python use_case_executor.py
+    python POC.py
     ```
 
 3. When prompted, enter the name of the AI-based security use case you want to execute.
