@@ -1,4 +1,4 @@
-# Tool Execution
+# Tool Execution(POC.py)
 
 This repository contains a Python script designed to execute AI-based security use cases defined in a JSON knowledge base. The script reads the knowledge base, prompts the user to select a use case, and calls the relevant tools associated with the selected use case. This tool is particularly useful for cybersecurity professionals and researchers looking to automate and streamline the execution of security-related tasks using AI and machine learning tools.
 
@@ -47,7 +47,7 @@ Assuming the `kb.json` file contains the following data:
 
 
 
-# Vulnerability Database Management and Fetching Tool
+# Vulnerability Database Management and Fetching Tool (POC1.py)
 This tool helps manage and fetch data from different vulnerability databases. It supports adding new databases to a local configuration file and fetching vulnerability data from selected sources.
 
 ## Features
