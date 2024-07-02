@@ -107,3 +107,57 @@ Assuming the `kb.json` file contains the following data:
     ]
 }
 ```
+
+
+
+
+
+# Network Packet Sniffer and Processor
+
+This project provides a simple implementation of a network packet sniffer and processor using Python. It includes four main files: `sniffer.py`, `producer.py`, `consumer.py`, and `network_log.txt`.
+
+## Files Overview
+
+1. **sniffer.py**
+2. **producer.py**
+3. **consumer.py**
+4. **network_log.txt**
+
+### 1. sniffer.py
+
+The `sniffer.py` script captures network packets on a specified network interface and logs relevant details.
+
+#### Key Functions:
+- **`packet_callback(packet)`**: Prints a summary of the packet.
+- **`capture_packets(interface, count)`**: Captures packets from the specified interface and returns them.
+
+
+### 2. producer.py
+The producer.py script captures network packets using the sniffer.py module, writes packet summaries to a FIFO (named pipe), and manages communication.
+
+#### Key Functions:
+- **`write_fifo(text)`**: Writes text to the FIFO.
+
+### 3. consumer.py
+The consumer.py script reads packet summaries from the FIFO and processes them.
+
+#### Key Function:
+- **`read_fifo()`**: Reads and prints data from the FIFO
+
+
+
+## How to Use
+### Run the Producer:
+```bash
+python producer.py
+```
+
+This will capture packets and write their summaries to the FIFO.
+
+### Run the Consumer:
+
+```bash
+python consumer.py
+```
+
+This will read packet summaries from the FIFO and process them.
