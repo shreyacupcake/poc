@@ -111,7 +111,7 @@ Assuming the `kb.json` file contains the following data:
 
 
 
-#Module 3: Network Packet Sniffer and Processor
+# Module 3: Network Packet Sniffer and Processor
 
 This project provides a simple implementation of a network packet sniffer and processor using Python. It includes four main files: `sniffer.py`, `producer.py`, `consumer.py`, and `network_log.txt`.
 
